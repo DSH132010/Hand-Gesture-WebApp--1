@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gestures WebApp</title>
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="overlay">
+            <div class="navBar">
+                <a href="#" class="navBrand">Hand Gesture</a>
+    
+                <button class="NavBtnClose">
+                    <img src="./Images/navBtnClose.svg" alt="NavBtn To DeToggle The Navigation">
+                </button>
+            </div>
+            <div class="mainNav">
+                <ul>
+                    <li><a href="#" class="navLink">Home</a></li>
+                    <li><a href="#" class="navLink">About</a></li>
+                    <li><a href="#" class="navLink">Emotions</a></li>
+                    <li><a href="#" class="navLink">Demo</a></li>
+                    <li><a href="#" class="navLink">Contact</a></li>
+                </ul>
+            </div>
+            
+            
+    
+        </div>
+    
+        <div class="hero">
+            
+    
+            <div class="navBar">
+                <a href="#" class="navBrand">Hand Gesture</a>
+    
+                <button class="NavBtn">
+                    <img src="./Images/navBtn.svg" alt="NavBtn To Toggle The Navigation">
+                </button>
+            </div>
+    
+            <a href="#demo" class="scrollDown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </a>
+        </div>
+    
+        <div class="demo" id="demo">
+            <div class="row">
+                <div class="col-1">
+                    <div class="camera" id="camera"></div>
+                    <button class="btn-primary" onclick="take_snapshot();">Capture Image</button>
+                </div>
+                <br>
+                <div class="col-2">
+                    <div class="result" id="result"></div>
+                    <button class="btn-secondary" onclick="check();">Check</button>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
